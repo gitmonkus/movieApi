@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Limelight&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="container">
+      <header class="header">
+        <h1>My Watchlist</h1>
+        <a href="index.html">Search for movies</a>
+      </header>
+      <main id="watchlist-content" class="main-content">
+        <div class="blank-list">
+          <p>Your watchlist is looking a little empty...</p>
+          <div class="cross-list">
+            <img src="images/cross.png" alt="add movies link" />
+            <p><a href="index.html">Let's add some movies!</a></p>
+          </div>
+        </div>
+      </main>
+    </section>
+    <script src="scripts/watchlist.js" type="module"></script>
+  </body>
+</html>
