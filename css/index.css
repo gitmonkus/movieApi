@@ -1,6 +1,11 @@
+:root {
+  --font: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
 * {
   box-sizing: border-box;
 }
+
 html,
 body {
   margin: 0;
@@ -13,8 +18,8 @@ body {
   justify-content: center;
   align-items: center;
   color: #fff;
-  /* background: url(../images/theater.jpg) no-repeat center;
-  background-size: cover; */
+  background: url(../images/theater.jpg) no-repeat center fixed, black;
+  background-size: cover;
   font-family: 'Limelight', cursive;
   line-height: 1.6;
 }
@@ -60,6 +65,12 @@ div.div {
   border-radius: 10px 10px 0 0;
 }
 
+.header a {
+  background: #30302f;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
 .search {
   display: flex;
   justify-content: center;
@@ -75,6 +86,8 @@ div.div {
   outline: none;
 }
 #search-input {
+  font-family: var(--font);
+  font-size: 1.5rem;
   padding: 15px 10px 15px 40px;
   border-radius: 10px 0 0 10px;
   border: 1px solid rgba(0, 0, 0, 0.3);
