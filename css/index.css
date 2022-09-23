@@ -1,5 +1,8 @@
 :root {
   --font: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  --light: #fff;
+  --dark-transparent: rgba(0, 0, 0, 0.3);
+  --dark: #000;
 }
 
 * {
@@ -17,8 +20,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #fff;
-  background: url(../images/theater.jpg) no-repeat center fixed, black;
+  color: var(--light);
+  background: url(../images/theater.jpg) no-repeat center fixed, var(--dark);
   background-size: cover;
   font-family: 'Limelight', cursive;
   line-height: 1.6;
@@ -33,7 +36,7 @@ a {
 }
 
 a:hover {
-  border-bottom: 4px solid #fff;
+  border-bottom: 4px solid var(--light);
 }
 
 p {
@@ -48,7 +51,7 @@ div.div {
   max-width: 600px;
   width: 600px;
   min-height: 779px;
-  box-shadow: 0 0 40px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 40px var(--dark-transparent);
 }
 
 .header {
@@ -90,7 +93,7 @@ div.div {
   font-size: 1.5rem;
   padding: 15px 10px 15px 40px;
   border-radius: 10px 0 0 10px;
-  border: 1px solid rgba(0, 0, 0, 0.3);
+  border: 1px solid var(--dark-transparent);
   width: 68%;
   margin: 0;
 }
@@ -109,11 +112,11 @@ div.div {
 #search-btn {
   padding: 0 30px;
   background: #861f26;
-  border: 1px solid rgba(0, 0, 0, 0.3);
+  border: 1px solid var(--dark-transparent);
   border-radius: 0 10px 10px 0;
   margin-left: -2px;
   cursor: pointer;
-  color: #fff;
+  color: var(--light);
 }
 
 /* MAIN */
@@ -129,11 +132,11 @@ div.div {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: #fff;
+  background: var(--light);
   border-radius: 0 0 10px 10px;
   min-height: 571px;
-  color: #000;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: var(--dark);
+  font-family: var(--font);
 }
 
 .movie-content {
@@ -141,7 +144,7 @@ div.div {
   padding: 50px;
   display: flex;
   align-items: center;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid var(--dark-transparent);
 }
 
 .add-watchlist,
@@ -169,7 +172,7 @@ div.div {
 }
 
 .text {
-  color: rgba(0, 0, 0, 0.3);
+  color: var(--dark-transparent);
   text-align: center;
   margin: 0 8rem;
 }
@@ -181,7 +184,7 @@ div.div {
 /* WATCHLIST */
 
 .blank-list p {
-  color: rgba(0, 0, 0, 0.3);
+  color: var(--dark-transparent);
 }
 
 .cross-list {
@@ -195,5 +198,5 @@ div.div {
   margin-right: 6px;
 }
 .cross-list a {
-  color: #000;
+  color: var(--dark);
 }
